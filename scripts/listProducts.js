@@ -6,7 +6,7 @@ export const listProducts = () => {
 
     inventory.forEach(item => {
 
-        const row = table.insertCell()
+        const row = table.insertRow()
 
         const cell1 = row.insertCell(0)
         const cell2 = row.insertCell(1)
@@ -20,13 +20,18 @@ export const listProducts = () => {
         const deleteButton = document.createElement("button")
         deleteButton.innerText = "Borrar"
         deleteButton.addEventListener("click", () => {
-
+            //Se añadira funcionalidad proximamente
         })
 
         const updateButton = document.createElement("button")
         updateButton.innerText = "Actualizar"
         updateButton.addEventListener("click", () => {
-            
+            //Se añadira funcionalidad proximamente
         })
+
+        cell4.appendChild(deleteButton)
+        cell4.appendChild(updateButton)
+
+
     })
 }
